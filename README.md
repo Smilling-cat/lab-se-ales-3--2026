@@ -1,5 +1,28 @@
 # Laboratorio-3
 # Análisis espectral de la voz .
+## Requisitos previos
+
+### Dependencias
+```bash
+pip install numpy matplotlib scipy
+```
+
+### Estructura de archivos
+Para que los scripts funcionen, los archivos de audio deben estar en esta ubicación exacta y con estos nombres:
+```
+lab 3/
+├── auido/
+│   ├── hombre1.wav
+│   ├── hombre2.wav
+│   ├── hombre3.wav
+│   ├── mujer1.wav
+│   ├── mujer2.wav
+│   └── mujer3.wav
+├── parte a.py
+└── parte b.py
+```
+
+> Si tu carpeta tiene una ruta diferente, edita las variables `CARPETA_AUDIO` y `CARPETA_FIGS` al inicio de cada script.
 # Objetivos general. 
 Emplear técnicas de análisis espectral para la diferenciación y clasificación de señales de voz según el género, utilizando herramientas del procesamiento digital de señales (DSP) implementadas en Python.
 # Objetivos especificos.
