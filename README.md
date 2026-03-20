@@ -172,6 +172,26 @@ de forma consistente como estándar de comparación.
 <img width="2100" height="1500" alt="señales_filtradas_parteB" src="https://github.com/user-attachments/assets/e8b4d66f-b8b0-46f8-8aa0-27ea3f265323" />
 <img width="1500" height="750" alt="boxplot_jitter_shimmer" src="https://github.com/user-attachments/assets/760a6f03-af1a-48fe-a3cc-8e438a07b3e6" />
 
+### Fórmulas implementadas
+
+**Jitter absoluto** — variación promedio entre periodos consecutivos:
+
+$$Jitter_{abs} = \frac{1}{N-1} \sum_{i=1}^{N-1} |T_i - T_{i+1}|$$
+
+**Jitter relativo** — normalizado respecto al periodo medio:
+
+$$Jitter_{rel} = \frac{\frac{1}{N-1}\sum_{i=1}^{N-1}|T_i - T_{i+1}|}{\frac{1}{N}\sum_{i=1}^{N}T_i} \times 100$$
+
+**Shimmer absoluto** — variación promedio entre amplitudes consecutivas:
+
+$$Shimmer_{abs} = \frac{1}{N-1} \sum_{i=1}^{N-1} |A_i - A_{i+1}|$$
+
+**Shimmer relativo** — normalizado respecto a la amplitud media:
+
+$$Shimmer_{rel} = \frac{\frac{1}{N-1}\sum_{i=1}^{N-1}|A_i - A_{i+1}|}{\frac{1}{N}\sum_{i=1}^{N}A_i} \times 100$$
+
+Donde $T_i$ son los periodos de cada ciclo vocal detectados por cruces por cero, $A_i$ son las amplitudes pico detectadas por `find_peaks`, y $N$ es el número total de ciclos en la ventana de 150 ms.
+
 ### Parámetros de adquisición por señal
 
 | Señal | Género | Duración (s) | Ventana (ms) | Ciclos | Filtro (Hz) |
