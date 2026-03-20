@@ -42,7 +42,7 @@ Rangos de Frecuencia: Para voces masculinas se estableció un rango de 80-400 Hz
 Evaluación de Estabilidad Vocal (Jitter y Shimmer)
 Se detectaron los periodos de vibración mediante el método de cruces por cero o detección de picos sucesivos.
 
-##Cálculo de Perturbaciones 
+## Cálculo de Perturbaciones 
 
 Jitter: Medición de la variabilidad en la frecuencia (tiempo entre ciclos) para evaluar la estabilidad del tono.
 
