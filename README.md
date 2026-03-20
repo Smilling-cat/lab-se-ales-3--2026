@@ -5,7 +5,7 @@ Emplear técnicas de análisis espectral para la diferenciación y clasificació
 # Objetivos especificos.
 Capturar y procesar señales de voz masculinas y femeninas en formato .wav.
 
-Aplicar la Transformada Rápida de Fourier (FFT) como herramienta de análisis espectral, visualizando los espectros en escala logarítmica.
+Transformada Rápida de Fourier (FFT) como herramienta de análisis espectral visualizando los espectros en escala logarítmica.
 
 Extraer parámetros característicos de cada señal: frecuencia fundamental (F₀), frecuencia media (centroide espectral), brillo e intensidad.
 
