@@ -190,7 +190,6 @@ flowchart TD
 ```
 # Parte C.
 
-# Diagrama parte C
 ## 1. Diferencias en la Frecuencia Fundamental 
 Hombres: Presentan se observa más baja, con valores como 130.09 Hz (Hombre 2) y 158.06 Hz (Hombre 3).
 Mujeres: Es mucho más alta, alcanzando los 267.27 Hz (Mujer 1) y 218.32 Hz (Mujer 2).
@@ -208,7 +207,7 @@ Diagnóstico No Invasivo: Permiten realizar un seguimiento objetivo del progreso
 
 # Conclusiones.
 
- Se comprobó que la frecuencia fundamental )es el parámetro más robusto para la diferenciación de género, con rangos claramente separados entre hombres (aprox. 130-160 Hz) y mujeres (aprox. 210-270 Hz). Esta diferencia técnica es una manifestación directa de la anatomía laríngea, donde la mayor masa y longitud de los pliegues vocales masculinos resulta en una tasa de vibración menor.
+ Se comprobó que la frecuencia fundamental es el parámetro más robusto para la diferenciación de género, con rangos claramente separados entre hombres (aprox. 130-160 Hz) y mujeres (aprox. 210-270 Hz). Esta diferencia técnica es una manifestación directa de la anatomía laríngea, donde la mayor masa y longitud de los pliegues vocales masculinos resulta en una tasa de vibración menor.
   La implementación de la Transformada de Fourier en escala logarítmica permitió identificar con precisión no solo el tono (altura), sino también el timbre a través del brillo y la frecuencia media. Se observó que las voces femeninas poseen una mayor densidad de energía en altas frecuencias, lo que se traduce en un mayor brillo espectral en comparación con las voces masculinas.
   El análisis de Jitter y Shimmer mediante el método de detección de picos y periodos reveló valores que excedieron los umbrales clínicos típicos. Se concluye que, aunque estos parámetros son indicadores vitales de salud vocal, su cálculo es extremadamente sensible al ruido ambiental y a la naturaleza de la señal grabada (frase vs. vocal sostenida), lo que subraya la importancia de un entorno controlado.
   Las herramientas empleadas en esta práctica demuestran que el procesamiento digital de señales de voz tiene aplicaciones críticas más allá de la comunicación, siendo fundamental para el desarrollo de sistemas de diagnóstico no invasivos, biometría de seguridad y monitoreo de la rehabilitación en pacientes con patologías laringológicas o neurológicas.
