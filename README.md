@@ -20,11 +20,14 @@ La metodología se divide en cuatro fases principales que abarcan desde la captu
 
 ## Fase 1
 Adquisición y Estandarización de SeñalesMuestreo de Sujetos: Se seleccionó un grupo de 6 voluntarios (3 hombres y 3 mujeres) para capturar la diversidad acústica entre géneros.
+
 Protocolo de Grabación: Cada participante grabó una frase estándar de aproximadamente 5 segundos para mantener la consistencia fonética.
+
 Parámetros Técnicos: Las señales se capturaron en formato .wav utilizando una frecuencia de muestreo, garantizando una resolución adecuada para el análisis de armónicos superiores.
 
 ## Fase 2
 Análisis en el Dominio de la Frecuencia (FFT)Transformada Rápida de Fourier (FFT): Se aplicó el algoritmo de la FFT a cada señal para descomponerla en sus componentes sinusoidales y obtener el espectro de magnitudes.
+
 ### Extracción de Atributos Espectrales
 Frecuencia Fundamental:  identificada como el pico de mayor magnitud en el espectro de bajas frecuencias.
 
