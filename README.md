@@ -57,6 +57,7 @@ Se grabaron 6 voces (3 hombres, 3 mujeres) diciendo la misma frase y se analizar
 ## Resultados 
 <img width="2100" height="1500" alt="señales_tiempo" src="https://github.com/user-attachments/assets/846e3117-3d3e-4f9b-8062-1cb610da5a18" />
 <img width="2100" height="1500" alt="espectros_magnitud" src="https://github.com/user-attachments/assets/75a31228-eca1-4434-974c-2ee0d826af63" />
+
 ### Características espectrales
 
 | Señal | Género | fs (Hz) | F0 (Hz) | Frec. media (Hz) | Brillo | RMS |
