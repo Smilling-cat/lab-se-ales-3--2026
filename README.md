@@ -56,21 +56,32 @@ Determina el tono (agudo o grave) y es el primer armónico del espectro. Formant
 
 ## Parámetros de Calidad y Estabilidad Vocal
 Para determinar si una voz es saludable o presenta rasgos patológicos.
+
 Jitter (Perturbación de la Frecuencia): Mide la variabilidad periodo a periodo de la frecuencia fundamental. Un Jitter elevado suele asociarse con una falta de control motor en las cuerdas vocales o presencia de masas (nódulos).
+
 Shimmer (Perturbación de la Amplitud): Mide la variabilidad de la intensidad entre ciclos consecutivos. Valores altos de Shimmer se relacionan con una reducción en la eficiencia del cierre glótico, produciendo una voz soplada o ruidosa.
+
 Caracterización Espectral: Brillo e IntensidadBrillo Espectral: Es una medida de la distribución de la energía en las altas frecuencias. Refleja la claridad de la voz y está directamente relacionado con la velocidad de cierre de los pliegues vocales.
+
 Intensidad: Representa la potencia acústica de la señal. Fisiológicamente, depende de la presión subglótica y la resistencia de los pliegues vocales.
-## Procesamiento Digital: Filtros FIRUn filtro de Respuesta Impulsional Finita (FIR) es un sistema lineal e invariante en el tiempo cuya respuesta a un impulso tiene una duración limitada. Se prefieren en el análisis de voz por su capacidad de mantener una fase lineal, lo que evita la distorsión de la forma de onda de la señal original, permitiendo un cálculo más preciso de Jitter y Shimmer tras el filtrado.
+
+## Procesamiento Digital
+Un filtro de Respuesta Impulsional Finita (FIR) es un sistema lineal e invariante en el tiempo cuya respuesta a un impulso tiene una duración limitada.  
+Se prefieren en el análisis de voz por su capacidad de mantener una fase lineal, lo que evita la distorsión de la forma de onda de la señal original permitiendo un cálculo más preciso de Jitter y Shimmer tras el filtrado.
 
 
 # Adquisición de la señal.
 Esta fase consistió en la digitalización de las ondas sonoras producidas por el aparato fonador de los voluntarios. El proceso se rigió por los siguientes parámetros técnicos:
+
 ## Entorno y Hardware de CapturaTransductor.
 Se utilizó una aplicacion del celular las grabaciones se realizaron en un entorno con bajo ruido de fondo para maximizar la relación señal-ruido (SNR) desde la fuente.
+
 ## Protocolo de Grabación
 Muestra: Se registraron 6 señales en total, 3 mujeres y 3 de hombres, todos adultos jóvenes sin patologías vocales diagnosticadas.
+
 Fonación: Cada sujeto emitió una vocal sostenida (generalmente la /a/ o la /e/) o una frase fonéticamente balanceada durante un lapso de 5 segundos, manteniendo una distancia constante de 10-15 cm respecto al celular.
-Digitalización y Formato de ArchivoLa señal analógica fue convertida a digital mediante un proceso de muestreo y cuantificación.Se utilizó el formato WAV (Waveform Audio File Format). Se prefirió este formato sobre el MP3 debido a que es un formato sin pérdida, lo cual es crítico para no alterar los micro-cambios de amplitud y frecuencia necesarios para calcular el Jitter y Shimmer.
+
+Digitalización y Formato de ArchivoLa señal analógica fue convertida a digital mediante un proceso de muestreo y cuantificación.Se utilizó el formato WAV (Waveform Audio File Format). Se prefirió este formato sobre el MP3 debido a que es un formato sin pérdida lo cual es crítico para no alterar los micro cambios de amplitud y frecuencia necesarios para calcular el Jitter y Shimmer.
 
 # Parte A.
 Se grabaron 6 voces (3 hombres, 3 mujeres) diciendo la misma frase y se analizaron en Python. A cada señal se le aplicó la Transformada de Fourier para pasar del dominio del tiempo al dominio de la frecuencia, extrayendo F0, frecuencia media, brillo e intensidad (RMS). En biomédica esto permite identificar a un hablante, detectar patologías vocales o clasificar voces automáticamente sin escucharlas.
