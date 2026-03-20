@@ -16,7 +16,8 @@ La metodología se divide en cuatro fases principales que abarcan desde la captu
 Adquisición y Estandarización de SeñalesMuestreo de Sujetos: Se seleccionó un grupo de 6 voluntarios (3 hombres y 3 mujeres) para capturar la diversidad acústica entre géneros.
 Protocolo de Grabación: Cada participante grabó una frase estándar de aproximadamente 5 segundos para mantener la consistencia fonética.
 Parámetros Técnicos: Las señales se capturaron en formato .wav utilizando una frecuencia de muestreo, garantizando una resolución adecuada para el análisis de armónicos superiores.
-## Fase 2: Análisis en el Dominio de la Frecuencia (FFT)Transformada Rápida de Fourier (FFT): Se aplicó el algoritmo de la FFT a cada señal para descomponerla en sus componentes sinusoidales y obtener el espectro de magnitudes.
+## Fase 2: Análisis en el Dominio de la Frecuencia (FFT)
+Transformada Rápida de Fourier (FFT): Se aplicó el algoritmo de la FFT a cada señal para descomponerla en sus componentes sinusoidales y obtener el espectro de magnitudes.
 ### Extracción de Atributos Espectrales
 Frecuencia Fundamental:  identificada como el pico de mayor magnitud en el espectro de bajas frecuencias.
 Frecuencia Media y Brillo: Se calculó el centroide espectral y la concentración de energía por encima de los 1500 Hz para determinar el timbre.
@@ -39,7 +40,8 @@ Jitter (Perturbación de la Frecuencia): Mide la variabilidad periodo a periodo 
 Shimmer (Perturbación de la Amplitud): Mide la variabilidad de la intensidad entre ciclos consecutivos. Valores altos de Shimmer se relacionan con una reducción en la eficiencia del cierre glótico, produciendo una voz soplada o ruidosa.
 Caracterización Espectral: Brillo e IntensidadBrillo Espectral: Es una medida de la distribución de la energía en las altas frecuencias. Refleja la claridad de la voz y está directamente relacionado con la velocidad de cierre de los pliegues vocales.
 Intensidad: Representa la potencia acústica de la señal. Fisiológicamente, depende de la presión subglótica y la resistencia de los pliegues vocales.
-## Procesamiento Digital: Filtros FIRUn filtro de Respuesta Impulsional Finita (FIR) es un sistema lineal e invariante en el tiempo cuya respuesta a un impulso tiene una duración limitada. Se prefieren en el análisis de voz por su capacidad de mantener una fase lineal, lo que evita la distorsión de la forma de onda de la señal original, permitiendo un cálculo más preciso de Jitter y Shimmer tras el filtrado.
+## Procesamiento Digital: 
+Filtros FIRUn filtro de Respuesta Impulsional Finita (FIR) es un sistema lineal e invariante en el tiempo cuya respuesta a un impulso tiene una duración limitada. Se prefieren en el análisis de voz por su capacidad de mantener una fase lineal, lo que evita la distorsión de la forma de onda de la señal original, permitiendo un cálculo más preciso de Jitter y Shimmer tras el filtrado.
 
 
 # Adquisición de la señal.
