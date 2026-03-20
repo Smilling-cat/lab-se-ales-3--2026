@@ -57,6 +57,16 @@ Se grabaron 6 voces (3 hombres, 3 mujeres) diciendo la misma frase y se analizar
 ## Resultados 
 <img width="2100" height="1500" alt="señales_tiempo" src="https://github.com/user-attachments/assets/846e3117-3d3e-4f9b-8062-1cb610da5a18" />
 <img width="2100" height="1500" alt="espectros_magnitud" src="https://github.com/user-attachments/assets/75a31228-eca1-4434-974c-2ee0d826af63" />
+### Características espectrales
+
+| Señal | Género | fs (Hz) | F0 (Hz) | Frec. media (Hz) | Brillo | RMS |
+|---|---|---|---|---|---|---|
+| hombre1 | Hombre | 44100 | 162.73 | 1191.90 | 0.1701 | 0.111841 |
+| hombre2 | Hombre | 44100 | 130.09 | 803.59 | 0.0668 | 0.138619 |
+| hombre3 | Hombre | 44100 | 158.06 | 448.74 | 0.0141 | 0.097656 |
+| mujer1 | Mujer | 44100 | 267.27 | 920.69 | 0.1007 | 0.111641 |
+| mujer2 | Mujer | 44100 | 218.32 | 639.31 | 0.0269 | 0.144448 |
+| mujer3 | Mujer | 44100 | 217.24 | 978.08 | 0.1106 | 0.123808 |
 
 ## Diagrama  parte A
 ```mermaid
