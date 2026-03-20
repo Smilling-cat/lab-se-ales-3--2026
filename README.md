@@ -230,7 +230,10 @@ Explicación Fisiológica: La guía indica que define la altura tonal. En los ho
 Las gráficas muestran que las voces femeninas mantienen picos de energía en frecuencias más altas (mayor brillo) en comparación con los hombres, cuyo espectro decae más rápido después de los 2000 Hz. Las frecuencias medias reportadas en las gráficas varían según el sujeto (ej. Hombre 1: 1192 Hz vs Mujer 3: 978 Hz), lo que sugiere que el timbre depende de la resonancia individual.
 Intensidad: Según tus señales en el dominio del tiempo, las amplitudes normalizadas son similares, pero la distribución de energía (espectro) es más densa en las mujeres en el rango de los formantes altos.
 ## 3. Conclusiones
-sobre el comportamiento de la voz Dimorfismo Acústico: Existe una clara separación espectral entre géneros, es el parámetro más confiable.
+Existe una clara separación espectral entre géneros la frecuencia fundamental es el parámetro más confiable para la clasificación automática de género.
+
+El análisis de Jitter y Shimmer en  muestra que ambos grupos superan los umbrales de normalidad  de la guía 1% para Jitter y  3-5 para Shimmer. Esto indica que las muestras capturadas presentan una inestabilidad significativa, posiblemente por ruido ambiental o falta de control en la fonación sostenida durante la grabación.
+
 ## 4. Importancia clínica del Jitter y Shimmer.
 Estos parámetros son vitales en la ingeniería biomédica por las siguientes razones.
 Patologías El Jitter (variación de frecuencia) y el Shimmer (variación de amplitud) miden la inestabilidad de la vibración de las cuerdas vocales.
