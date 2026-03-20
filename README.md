@@ -256,8 +256,10 @@ El valor RMS es una medida de la potencia media o intensidad de la señal. A dif
 ## 2 ¿Qué limitaciones plantea el uso de características como shimmer y jitter para la detección de patologías como disartrias y afasias?
 
 El Jitter y el Shimmer miden la estabilidad de la vibración de las cuerdas vocales. Sin embargo patologías como la disartria son trastornos del habla de origen neurológico que afectan la articulación la respiración y la prosodia de manera integral no solo la vibración laringea. Por eso estos parámetros pueden ser normales incluso si el paciente es ininteligible debido a un mal control de los músculos de la cara o lengua.
+
 La afasia es un trastorno del lenguaje comprensión y producción de palabras y no necesariamente del mecanismo físico de fonación. Un paciente con afasia puede tener cuerdas vocales perfectamente sanas y estables Jitter y Shimmer bajos, pero ser incapaz de estructurar oraciones o encontrar las palabras adecuadas.
 Estas medidas requieren una señal periódica y estable fonación sostenida para ser precisas. En pacientes con disartria donde el control del flujo de aire es irregular es muy difícil segmentar ciclos vocales limpios lo que genera "falsos positivos" de patología laringea que en realidad son errores de control motor o ruido en la señal.
+
 Un Jitter elevado indica que algo anda mal en la estabilidad, pero no puede distinguir por sí solo si la causa es una lesión estructural como un nódulo o una debilidad muscular neurológica disartria.
 
 
