@@ -42,7 +42,7 @@ Comparar cuantitativamente las diferencias espectrales entre voces masculinas y 
 La metodología se divide en cuatro fases principales que abarcan desde la captura física del sonido hasta la extracción de parámetros estadísticos y clínicos.
 
 ## Fase 1
-Adquisición y Estandarización de SeñalesMuestreo de Sujetos: Se seleccionó un grupo de 6 voluntarios (3 hombres y 3 mujeres) para capturar la diversidad acústica entre géneros.
+Se seleccionó un grupo de 6 voluntarios (3 hombres y 3 mujeres) para capturar la diversidad acústica entre géneros.
 
 Cada participante grabó una frase estándar de aproximadamente 5 segundos para mantener la consistencia fonética.
 
