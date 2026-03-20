@@ -23,17 +23,20 @@ Adquisición y Estandarización de SeñalesMuestreo de Sujetos: Se seleccionó u
 Protocolo de Grabación: Cada participante grabó una frase estándar de aproximadamente 5 segundos para mantener la consistencia fonética.
 Parámetros Técnicos: Las señales se capturaron en formato .wav utilizando una frecuencia de muestreo, garantizando una resolución adecuada para el análisis de armónicos superiores.
 
-## Fase 2: Análisis en el Dominio de la Frecuencia (FFT)Transformada Rápida de Fourier (FFT): Se aplicó el algoritmo de la FFT a cada señal para descomponerla en sus componentes sinusoidales y obtener el espectro de magnitudes.
+## Fase 2
+Análisis en el Dominio de la Frecuencia (FFT)Transformada Rápida de Fourier (FFT): Se aplicó el algoritmo de la FFT a cada señal para descomponerla en sus componentes sinusoidales y obtener el espectro de magnitudes.
 ### Extracción de Atributos Espectrales
 Frecuencia Fundamental:  identificada como el pico de mayor magnitud en el espectro de bajas frecuencias.
 
 Frecuencia Media y Brillo: Se calculó el centroide espectral y la concentración de energía por encima de los 1500 Hz para determinar el timbre.
 
-## Fase 3: Pre-procesamiento y Filtrado Digital
+## Fase 3
+Pre-procesamiento y Filtrado Digital
 Diseño de Filtros FIR: Se implementaron filtros pasa-banda de tipo Respuesta Impulsional Finita (FIR) para aislar la región de interés vocal y mitigar ruidos externos.
 Rangos de Frecuencia: Para voces masculinas se estableció un rango de 80-400 Hz, mientras que para las femeninas se utilizó un rango de 150-500 Hz.
 
-## Fase 4: Evaluación de Estabilidad Vocal (Jitter y Shimmer)
+## Fase 4
+Evaluación de Estabilidad Vocal (Jitter y Shimmer)
 Se detectaron los periodos de vibración mediante el método de cruces por cero o detección de picos sucesivos.
 
 ##Cálculo de Perturbaciones 
