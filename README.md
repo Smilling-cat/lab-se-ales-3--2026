@@ -277,7 +277,7 @@ Hombres: Presentan se observa más baja, con valores como 130.09 Hz (Hombre 2) y
 
 Mujeres: Es mucho más alta, alcanzando los 267.27 Hz (Mujer 1) y 218.32 Hz (Mujer 2).
 
-Explicación Fisiológica: La guía indica que define la altura tonal. En los hombres, los pliegues vocales suelen ser más largos y gruesos vibrando a menor velocidad lo que genera tonos más graves en comparación con las mujeres.
+Explicación Fisiológica la guía indica que define la altura tonal. En los hombres, los pliegues vocales suelen ser más largos y gruesos vibrando a menor velocidad lo que genera tonos más graves en comparación con las mujeres.
 
 ## 2. Brillo, Frecuencia Media e IntensidadBrillo y Media.
 Las gráficas muestran que las voces femeninas mantienen picos de energía en frecuencias más altas (mayor brillo) en comparación con los hombres, cuyo espectro decae más rápido después de los 2000 Hz. Las frecuencias medias reportadas en las gráficas varían según el sujeto (ej. Hombre 1: 1192 Hz vs Mujer 3: 978 Hz), lo que sugiere que el timbre depende de la resonancia individual.
