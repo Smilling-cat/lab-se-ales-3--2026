@@ -85,12 +85,12 @@ Diagnóstico No Invasivo: Permiten realizar un seguimiento objetivo del progreso
   Las herramientas empleadas en esta práctica demuestran que el procesamiento digital de señales de voz tiene aplicaciones críticas más allá de la comunicación, siendo fundamental para el desarrollo de sistemas de diagnóstico no invasivos, biometría de seguridad y monitoreo de la rehabilitación en pacientes con patologías laringológicas o neurológicas.
 
 # PREGUNTAS PARA LA DISCUSIÓN 
-## 1.¿Cómo es la frecuencia fundamental de la densidad espectral de potencia asociada a una señal de voz masculina con respecto a la que se obtiene a partir de una señal de voz femenina, mayor o menor? 
+## 1. ¿Cómo es la frecuencia fundamental de la densidad espectral de potencia asociada a una señal de voz masculina con respecto a la que se obtiene a partir de una señal de voz femenina, mayor o menor? 
 La frecuencia fundamental asociada a una señal de voz masculina es menor que la de una señal de voz femenina. Fisiológicamente, esto se debe a que los hombres poseen pliegues vocales con mayor masa y longitud, lo que genera una vibración más lenta (tonos graves). En términos de la Densidad Espectral de Potencia (PSD), el primer pico significativo de energía aparecerá en un rango de 80-150 Hz para hombres y de 180-250 Hz para mujeres.
-## 1.1¿Qué hay del valor RMS? 
+## 1.1 ¿Qué hay del valor RMS? 
 El valor RMS es una medida de la potencia media o intensidad de la señal. A diferencia de la frecuencia fundamental, el valor RMS no depende directamente del género, sino de la presión subglótica y el esfuerzo fonatorio del hablante al momento de la grabación. Si ambos sujetos graban con el mismo volumen y a la misma distancia del micrófono, sus valores RMS deberían ser técnicamente similares, aunque las mujeres suelen mostrar una mayor variación de amplitud en sus ciclos.
 
-## 2¿Qué limitaciones plantea el uso de características como shimmer y jitter para la detección de patologías como disartrias y afasias?
+## 2 ¿Qué limitaciones plantea el uso de características como shimmer y jitter para la detección de patologías como disartrias y afasias?
 
 El Jitter y el Shimmer miden la estabilidad de la vibración de las cuerdas vocales. Sin embargo patologías como la disartria son trastornos del habla de origen neurológico que afectan la articulación la respiración y la prosodia de manera integral no solo la vibración laringea. Por eso estos parámetros pueden ser normales incluso si el paciente es ininteligible debido a un mal control de los músculos de la cara o lengua.
 La afasia es un trastorno del lenguaje comprensión y producción de palabras y no necesariamente del mecanismo físico de fonación. Un paciente con afasia puede tener cuerdas vocales perfectamente sanas y estables Jitter y Shimmer bajos, pero ser incapaz de estructurar oraciones o encontrar las palabras adecuadas.
