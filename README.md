@@ -282,7 +282,7 @@ Explicación Fisiológica la guía indica que define la altura tonal. En los hom
 ## 2. Brillo, Frecuencia Media e IntensidadBrillo y Media.
 Las gráficas muestran que las voces femeninas mantienen picos de energía en frecuencias más altas (mayor brillo) en comparación con los hombres, cuyo espectro decae más rápido después de los 2000 Hz. Las frecuencias medias reportadas en las gráficas varían según el sujeto (ej. Hombre 1: 1192 Hz vs Mujer 3: 978 Hz), lo que sugiere que el timbre depende de la resonancia individual.
 
-Intensidad, según tus señales en el dominio del tiempo las amplitudes normalizadas son similares pero la distribución de energía (espectro) es más densa en las mujeres en el rango de los formantes altos.
+Intensidad, según las señales en el dominio del tiempo las amplitudes normalizadas son similares pero la distribución de energía (espectro) es más densa en las mujeres en el rango de los formantes altos.
 
 ## 3. Conclusiones
 Existe una clara separación espectral entre géneros la frecuencia fundamental es el parámetro más confiable para la clasificación automática de género.
