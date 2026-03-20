@@ -4,35 +4,56 @@
 Emplear técnicas de análisis espectral para la diferenciación y clasificación de señales de voz según el género, utilizando herramientas del procesamiento digital de señales (DSP) implementadas en Python.
 # Objetivos especificos.
 Capturar y procesar señales de voz masculinas y femeninas en formato .wav.
+
 Aplicar la Transformada Rápida de Fourier (FFT) como herramienta de análisis espectral, visualizando los espectros en escala logarítmica.
+
 Extraer parámetros característicos de cada señal: frecuencia fundamental (F₀), frecuencia media (centroide espectral), brillo e intensidad.
+
 Diseñar e implementar un filtro FIR pasa banda con ventana Hamming, diferenciado por género, para eliminar ruido y aislar las componentes vocales.
+
 Medir Jitter relativo y Shimmer relativo para evaluar la estabilidad vocal y compararla con rangos clínicos de referencia.
+
 Comparar cuantitativamente las diferencias espectrales entre voces masculinas y femeninas con gráficos y tablas argumentadas.
 
 # Metodología del experimento.
 La metodología se divide en cuatro fases principales que abarcan desde la captura física del sonido hasta la extracción de parámetros estadísticos y clínicos.
+
 ## Fase 1
 Adquisición y Estandarización de SeñalesMuestreo de Sujetos: Se seleccionó un grupo de 6 voluntarios (3 hombres y 3 mujeres) para capturar la diversidad acústica entre géneros.
 Protocolo de Grabación: Cada participante grabó una frase estándar de aproximadamente 5 segundos para mantener la consistencia fonética.
 Parámetros Técnicos: Las señales se capturaron en formato .wav utilizando una frecuencia de muestreo, garantizando una resolución adecuada para el análisis de armónicos superiores.
+
 ## Fase 2: Análisis en el Dominio de la Frecuencia (FFT)Transformada Rápida de Fourier (FFT): Se aplicó el algoritmo de la FFT a cada señal para descomponerla en sus componentes sinusoidales y obtener el espectro de magnitudes.
 ### Extracción de Atributos Espectrales
 Frecuencia Fundamental:  identificada como el pico de mayor magnitud en el espectro de bajas frecuencias.
+
 Frecuencia Media y Brillo: Se calculó el centroide espectral y la concentración de energía por encima de los 1500 Hz para determinar el timbre.
+
 ## Fase 3: Pre-procesamiento y Filtrado Digital
 Diseño de Filtros FIR: Se implementaron filtros pasa-banda de tipo Respuesta Impulsional Finita (FIR) para aislar la región de interés vocal y mitigar ruidos externos.
 Rangos de Frecuencia: Para voces masculinas se estableció un rango de 80-400 Hz, mientras que para las femeninas se utilizó un rango de 150-500 Hz.
+
 ## Fase 4: Evaluación de Estabilidad Vocal (Jitter y Shimmer)
-Análisis de Ciclos: Se detectaron los periodos de vibración mediante el método de cruces por cero o detección de picos sucesivos.Cálculo de Perturbaciones:Jitter: Medición de la variabilidad en la frecuencia (tiempo entre ciclos) para evaluar la estabilidad del tono.Shimmer: Medición de la variabilidad en la amplitud (volumen entre ciclos) para evaluar la estabilidad de la intensidad.
+Se detectaron los periodos de vibración mediante el método de cruces por cero o detección de picos sucesivos.
+
+##Cálculo de Perturbaciones 
+
+Jitter: Medición de la variabilidad en la frecuencia (tiempo entre ciclos) para evaluar la estabilidad del tono.
+
+Shimmer: Medición de la variabilidad en la amplitud (volumen entre ciclos) para evaluar la estabilidad de la intensidad.
 
 # Marco conceptual.
 
 ## Naturaleza de la Señal de Voz.
 La voz humana es una señal compleja y no estacionaria generada por la vibración de los pliegues vocales y moldeada por el tracto vocal. 
+
 Este modelo fuente-filtro permite analizar la voz mediante parámetros que reflejan tanto el estado físico de las cuerdas vocales como la configuración de las cavidades de resonancia.
+
 ## Análisis en el Dominio de la Frecuencia (FFT)
-La Transformada Rápida de Fourier (FFT) es un algoritmo que optimiza el cálculo de la Transformada Discreta de Fourier (DFT), permitiendo pasar una señal del dominio del tiempo al de la frecuencia. En el análisis de voz, la FFT permite identificar:Frecuencia Fundamental, es la tasa de vibración de los pliegues vocales. Determina el tono (agudo o grave) y es el primer armónico del espectro.Formantes, son las frecuencias de resonancia del tracto vocal que aparecen como picos de energía en el espectro, fundamentales para la identificación de fonemas.
+La Transformada Rápida de Fourier (FFT) es un algoritmo que optimiza el cálculo de la Transformada Discreta de Fourier (DFT), permitiendo pasar una señal del dominio del tiempo al de la frecuencia. En el análisis de voz, la FFT permite identificar la frecuencia Fundamental, es la tasa de vibración de los pliegues vocales. 
+
+Determina el tono (agudo o grave) y es el primer armónico del espectro. Formantes, son las frecuencias de resonancia del tracto vocal que aparecen como picos de energía en el espectro, fundamentales para la identificación de fonemas.
+
 ## Parámetros de Calidad y Estabilidad Vocal
 Para determinar si una voz es saludable o presenta rasgos patológicos.
 Jitter (Perturbación de la Frecuencia): Mide la variabilidad periodo a periodo de la frecuencia fundamental. Un Jitter elevado suele asociarse con una falta de control motor en las cuerdas vocales o presencia de masas (nódulos).
